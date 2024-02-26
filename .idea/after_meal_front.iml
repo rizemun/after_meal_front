@@ -9,6 +9,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="telegram-web-app" level="application" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="5f057f54-bc85-4914-94db-ff7ece907fd0" />
