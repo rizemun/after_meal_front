@@ -10,9 +10,6 @@ function App() {
     useEffect(() => {
         tg.ready();
     }, []);
-    const handleCloseClick = () => {
-        tg.close();
-    }
 
     const menuPositions = [
         {

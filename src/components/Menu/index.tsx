@@ -1,4 +1,4 @@
-import {FC, useContext, useMemo} from 'react';
+import {FC, useContext} from 'react';
 import classnames from 'classnames/bind';
 import {ConfigContext, withStandardConfig} from "../hoc/withStandardConfig";
 import styles from './Menu.module.scss';
@@ -12,12 +12,12 @@ type TMenuProps = {
 const Menu: FC<TMenuProps> = ({menuPositions}) => {
     const config = useContext(ConfigContext);
 
-    const currentOrder = useMemo(() => {
-        menuPositions.map(meal => ({
-            ...meal,
-            count: 0
-        }))
-    }, [menuPositions])
+    // const currentOrder = useMemo(() => {
+    //     menuPositions.map(meal => ({
+    //         ...meal,
+    //         count: 0
+    //     }))
+    // }, [menuPositions])
 
     return (
         <form className={cn('menu')}>
